@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="index2.css">
+    <script src="script2.js" defer></script>
+    <title>Weather V2</title>
+</head>
+<body>
+  <div id="navBar">
+    <h1 id="logo">Weather</h1>
+    <form id="searchForm">
+        <input type="text" id="locationInput" placeholder="Search Location" required>
+        <button type="submit"><i class="fas fa-search"></i></button>
+    </form>
+    <div id="unitSetting">
+        <button id="metricSetting">&deg;C, m/s</button>
+        <button id="imperialSetting">&deg;F, mph</button>
+    </div>
+</div>
+
+  <div id="currentInfo">
+  </div>
+
+  <div id="weatherDetails">
+    <div id="forecastInfo">
+      <div id="forecastHeading">3-DAYS FORECAST</div>
+      <div id="forecastDay0"></div>
+      <div id="forecastSymbol0"></div>
+      <div id="ForecastLow0"></div>
+      <div id="ForecastHigh0"></div>
+      <div id="forecastDay1"></div>
+      <div id="forecastSymbol1"></div>
+      <div id="ForecastLow1"></div>
+      <div id="ForecastHigh1"></div>
+      <div id="forecastDay2"></div>
+      <div id="forecastSymbol2"> </div>
+      <div id="ForecastLow2"> </div>
+      <div id="ForecastHigh2"> </div>
+    </div>
+    
+    <div id="hourlyForecast">
+      <div id="time0"></div>
+      <div id="condition0"></div>
+      <div id="currentTemp0"></div>
+      <div id="time1"></div>
+      <div id="condition1"></div>
+      <div id="currentTemp1"></div>
+      <div id="time2"></div>
+      <div id="condition2"></div>
+      <div id="currentTemp2"></div>
+      <div id="time3"></div>
+      <div id="condition3"></div>
+      <div id="currentTemp3"></div>
+      <div id="time4"></div>
+      <div id="condition4"></div>
+      <div id="currentTemp4"></div>
+      <div id="time5"></div>
+      <div id="condition5"></div>
+      <div id="currentTemp5"></div>
+      <div id="time6"></div>
+      <div id="condition6"></div>
+      <div id="currentTemp6"></div>
+      <div id="time7"></div>
+      <div id="condition7"></div>
+      <div id="currentTemp7"></div>
+      <div id="time8"></div>
+      <div id="condition8"></div>
+      <div id="currentTemp8"></div>
+      <div id="time9"></div>
+      <div id="condition9"></div>
+      <div id="currentTemp9"></div>
+      <div id="time10"></div>
+      <div id="condition10"></div>
+      <div id="currentTemp10"></div>
+      <div id="time11"></div>
+      <div id="condition11"></div>
+      <div id="currentTemp11"></div>
+      <div id="time12"></div>
+      <div id="condition12"></div>
+      <div id="currentTemp12"></div>
+      <div id="time13"></div>
+      <div id="condition13"></div>
+      <div id="currentTemp13"></div>
+      <div id="time14"></div>
+      <div id="condition14"></div>
+      <div id="currentTemp14"></div>
+      <div id="time15"></div>
+      <div id="condition15"></div>
+      <div id="currentTemp15"></div>
+      <div id="time16"></div>
+      <div id="condition16"></div>
+      <div id="currentTemp16"></div>
+      <div id="time17"></div>
+      <div id="condition17"></div>
+      <div id="currentTemp17"></div>
+      <div id="time18"></div>
+      <div id="condition18"></div>
+      <div id="currentTemp18"></div>
+      <div id="time19"></div>
+      <div id="condition19"></div>
+      <div id="currentTemp19"></div>
+      <div id="time20"></div>
+      <div id="condition20"></div>
+      <div id="currentTemp20"></div>
+    </div>
+
+    <div id="humidity">
+      <div id="humidityHeading">
+        <h3>Humidity</h3>
+      </div>
+      <div id="humidityValue"></div>
+    </div>
+
+    <div id="uv">
+      <div id="uvHeading"><h3>UV Index</h3></div>
+      <div id="uvValue"></div>
+    </div>
+
+    <div id="visibility">
+      <div id="visibilityHeading"><h3>Visibility</h3></div>
+      <div id="visibilityValue"></div>
+    </div>
+
+    <div id="windSpeed">
+      <div id="windSpeedHeading"><h3>Gust</h3></div>
+      <div id="windSpeedValue"></div>
+    </div>
+
+    <div id="feelsLike">
+      <div id="feelsLikeHeading"><h3>Feels Like</h3></div>
+      <div id="feelsLikeValue"></div>
+    </div>
+
+    <div id="precipation">
+      <div id="precipationHeading"><h3>Precipation</h3></div>
+      <div id="precipationValue"></div>
+    </div>
+
+    <div id="pressure">
+      <div id="pressureHeading"><h3>Pressure</h3></div>
+      <div id="pressureValue"></div>
+    </div>
+
+    <div id="cloud">
+      <div id="cloudHeading"><h3>Cloud</h3></div>
+      <div id="cloudValue"></div>
+    </div>
+
+    <div id="wind2">
+      <div id="wind2Heading"><h3>Wind</h3></div>
+      <div id="wind2Value"></div>
+    </div>
+
+    <div id="wind2Dir">
+      <div id="wind2DirHeading"><h3>Wind Direction</h3></div>
+      <div id="wind2DirValue"></div>
+    </div>
+
+    <div id="wind2Degree">
+      <div id="wind2DegreeHeading"><h3>Wind Degree</h3></div>
+      <div id="wind2DegreeValue"></div>
+    </div>
+
+    <div id="timeZone">
+      <div id="timeZoneHeading"><h3>Time Zone</h3></div>
+      <div id="timeZoneValue"></div>
+    </div>
+  </div>
+  
+</body>
+</html>
